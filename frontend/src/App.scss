@@ -1,0 +1,62 @@
+$backgroundColor: rgb(241, 241, 241);
+$h1Color: black;
+$textColor: black;
+$font: "Open Sans", sans-serif, "";
+$buttonColor: rgb(2, 42, 101);
+
+body{
+	background-color: $backgroundColor;
+}
+
+.App {
+	padding: 10% 20%;
+	display: grid;
+	gap: 30px;
+
+	h1 {
+		font-family: $font;
+	}
+	h2 {
+		font-family: $font;
+	}
+	h3 {
+		font-family: $font;
+	}
+	p {
+		font-family: $font;
+	}
+	text-align: center;
+
+	.Container {
+		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+			0 10px 10px -5px rgba(0, 0, 0, 0.04);
+		padding: 50px;
+		//Css-grid layput
+		display: grid;
+		gap: 20px;
+
+		.InputContainer {
+			margin: 25px 0 0 0;
+		}
+
+		.ButtonContainer {
+			margin: 10px auto;
+			h2 {
+				margin: 0;
+				text-transform: initial;
+				color: white
+			}
+			#button{
+				background-color: $buttonColor;
+			}
+		}
+
+		#error{
+			color: rgb(160, 34, 34)
+		}
+
+		.Hidden {
+			display: none
+		}
+	}
+}
