@@ -2,7 +2,7 @@
 
 Oppgaven var todelt, en for backend og en for frontend.
 
-Backenddelen bestod av en HTTP GET-metode, der jeg skulle innhente informasjon ved å interagere med Wikipedias API. Gitt en "topic" skulle jeg ta i bruk en gitt query på formen `https://en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&page=[topic]` for å innente artikkelen, før jeg skulle printe ut antall forekomster av temaet i dens egen artikkels tekstfelt. 
+Backenddelen bestod av en HTTP GET-metode, der jeg skulle innhente informasjon ved å interagere med Wikipedias API. Gitt en "topic" skulle jeg ta i bruk en gitt query på formen `https://en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&page=[topic]` for å innente artikkelen, før jeg skulle printe ut antall forekomster av temaet i tekstfeltet til artikkelen. 
 
 For frontenddelen måtte jeg gjøre backenddelen til et API jeg kunne kalle på, og skrive frontend som kaller på dette APIet. Her skulle vi kunne skrive inn et tema og få antall forekomster av ordet vist som resultat. 
 
